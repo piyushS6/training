@@ -1,0 +1,48 @@
+// variables
+$font-stack: Helvetica, sans-serif;
+$primary-color: #0b4a55;
+
+// Partials
+@use './base';
+
+// mixins
+@mixin theme($theme: bisque){
+    background-color: $theme;
+    
+}
+
+div{
+    // Nesting 
+    // background-color: bisque;
+    
+    padding: 30px;
+    button{
+        padding: 10px;
+        border-radius: 8px;
+        border-width: 0;
+        font-size: medium;
+        &:hover{
+            background-color: rgb(0, 255, 170);
+        }
+    }
+
+}
+
+// extend
+%shared-style {
+    border: 5px solid black;
+}
+
+.box1{
+    @include theme();
+    @extend %shared-style;
+    border-color: rebeccapurple;
+
+}
+
+.box2{
+    @include theme($theme: rgb(241, 140, 161));
+    @extend %shared-style;
+    border-color: rgb(210, 233, 4);
+}
+

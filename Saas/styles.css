@@ -1,0 +1,31 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+div {
+  padding: 30px;
+}
+div button {
+  padding: 10px;
+  border-radius: 8px;
+  border-width: 0;
+  font-size: medium;
+}
+div button:hover {
+  background-color: rgb(0, 255, 170);
+}
+
+.box2, .box1 {
+  border: 5px solid black;
+}
+
+.box1 {
+  background-color: bisque;
+  border-color: rebeccapurple;
+}
+
+.box2 {
+  background-color: rgb(241, 140, 161);
+  border-color: rgb(210, 233, 4);
+}/*# sourceMappingURL=styles.css.map */
