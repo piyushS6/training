@@ -1,0 +1,23 @@
+div{
+    width: 100%;
+    margin: 20px;
+}
+
+button{
+    margin: 50px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 195, 127);
+    border: none;
+    cursor: pointer;
+}
+
+textarea {
+    background-color: rgba(238, 236, 236, 0.932);
+}
+
+#res {
+    font-size: 20px;
+    text-align: center;
+}
