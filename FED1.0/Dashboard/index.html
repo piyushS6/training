@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div class="heading1"><h3>PROGRESS INFORMATION</h3></div>
+    <div class="heading2"><h3>YOUR CARDS (3)</h3></div>
+    <div class="heading3"><h3>YOUR TEAMS (4)</h3></div>
+
+    <div class="grid-container">
+        <div class="header">
+            <!-- <i class="fa-solid fa-bars menu"></i> -->
+            <div class="menu" onclick="openSidebar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="right-menu">
+                <img src="images\profile-pic.png" alt="profile-pic">
+                <i class="fa-solid fa-caret-down dropdown logout"></i>
+            </div>
+
+            <div class="logoutpopup" onclick="window.location.href='../index.html'">
+                <p><i class="fa-solid fa-right-from-bracket"></i>Logout</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <div class="logo">
+                    <img src="images\rp-logo.png" alt="rp-logo">
+                </div>
+                <span onclick="closeSidebar()"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+            <div class="sidebar-link">
+                <p onclick="window.location.href='./index.html'">Dashboard <span><i class="fa-solid fa-house"></i></span></p>
+                <hr>
+                <p onclick="window.location.href='../Catalog/index.html'">Products Catalog <span><i class="fa-solid fa-layer-group"></i></span></p>
+            </div>
+        </div>
+
+        <div class="main">
+
+            <div class="card one">
+                <h4>Total Profit</h4>
+                <div class="flex-content">
+                    <h5>Profit</h5>
+                    <h3>$18M</h3>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress1"></div>
+                </div>
+                <div class="flex-content">
+                    <p>Change</p>
+                    <p>78%</p>
+                </div>
+            </div>
+            <div class="card two">
+                <h4>Feedbacks</h4>
+                <div class="flex-content">
+                    <h5>Customer Review</h5>
+                    <h3>134</h3>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress2"></div>
+                </div>
+                <div class="flex-content">
+                    <p>Change</p>
+                    <p>89%</p>
+                </div>
+            </div>
+            <div class="card three">
+                <h4>New Orders</h4>
+                <div class="flex-content">
+                    <h5>Orders progress</h5>
+                    <h3>160</h3>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress3"></div>
+                </div>
+                <div class="flex-content">
+                    <p>Change</p>
+                    <p>55%</p>
+                </div>
+            </div>
+            <div class="card four">
+                <h4>New Users</h4>
+                <div class="flex-content">
+                    <h5>Joined Users</h5>
+                    <h3>382</h3>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress4"></div>
+                </div>
+                <div class="flex-content">
+                    <p>Change</p>
+                    <p>77%</p>
+                </div>
+            </div>
+            <div class="card five">
+                <p>RECENTLY REFERRALS</p>
+                <p>Block with important Recently Referrals information</p>
+                <div style="overflow-x:auto;">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Age</th>
+                            <th>Office</th>
+                            <th>Date</th>
+                            <th>Salary</th>
+                        </tr>
+                        <tr>
+                            <td>Damon</td>
+                            <td>5516 Adolfo Green</td>
+                            <td>18</td>
+                            <td>Littelhaven</td>
+                            <td>2014/06/13</td>
+                            <td>553.536</td>
+                        </tr>
+                        <tr>
+                            <td>Miracle</td>
+                            <td>176 Hirthe Squares</td>
+                            <td>35</td>
+                            <td>Ryleetown</td>
+                            <td>2013/09/27</td>
+                            <td>784.802</td>
+                        </tr>
+                        <tr>
+                            <td>Torrey</td>
+                            <td>1995 Richle Neck</td>
+                            <td>15</td>
+                            <td>West Sedrickstad</td>
+                            <td>2014/09/12</td>
+                            <td>344.302</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card six">
+                <div class="balance"><p>$560,245.35</p></div>
+                <i class="fa-regular fa-bookmark"></i>
+                <h2>David Beckham</h2>
+                <p>8748-XXXX-1678-5416</p>
+                <p>MASTERCARD</p>
+                <hr>
+                <p><em>Expires at 03/22</em></p>
+            </div>
+            <div class="card seven">
+                <div class="balance"><p>$2156.78</p></div>
+                <i class="fa-regular fa-bookmark"></i>
+                <h2>Matt Daemon</h2>
+                <p>4512-XXXX-1678-7528</p>
+                <p>VISA</p>
+                <hr>
+                <p><em>Expires at 02/20</em></p>
+            </div>
+            <div class="card eight">
+                <div class="balance"><p>$1467.98</p></div>
+                <i class="fa-regular fa-bookmark"></i>
+                <h2>Mrs. Angelina Jolie</h2>
+                <p>4512-XXXX-1678-7528</p>
+                <p>VISA</p>
+                <hr>
+                <p><em>Locked Temporary</em></p>
+            </div>
+            <div class="card nine">
+                <h3>Team 1</h3>
+                <div class="circle-container">
+                    <div class="purple">NO</div>
+                    <div class="burlywood">JBL</div>
+                    <div class="blue">KRD</div>
+                </div>
+                
+                <hr>
+                <p><em>Current month charged: <br>$10,200.00</em></p>
+            </div>
+            <div class="card ten">
+                <h3>Team 2</h3>
+                <div class="circle-container">
+                    <div class="aqua">CMD</div>
+                    <div class="purple">NO</div>
+                    <div class="burlywood">JBL</div>
+                    <div class="blue">KRD</div>
+                </div>
+                <hr>
+                <p><em>Current month charged: <br>$10,500.00</em></p>
+            </div>
+            <div class="card eleven">
+                <h3>Team 3</h3>
+                <div class="circle-container">
+                    <div class="aqua">CMD</div>
+                    <div class="blue">KRD</div>
+                </div>
+                <hr>
+                <p><em>Current month charged: <br>$12,200.00</em></p>
+            </div>
+            <div class="card twelve">
+                <h3>Team 4</h3>
+                <div class="circle-container">
+                    <div class="aqua">CMD</div>
+                    <div class="purple">NO</div>
+                    <div class="burlywood">JBL</div>
+                    <div class="blue">KRD</div>
+                </div>
+                <hr>
+                <p><em>Current month charged: <br>$10,200.00</em></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
