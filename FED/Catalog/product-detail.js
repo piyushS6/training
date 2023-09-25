@@ -1,46 +1,3 @@
-// Card data for images
-
-const imageData = [
-    {
-        source: "images/001.jpg"
-    },
-    {
-        source: "images/001.jpg"
-    },
-    {
-        source: "images/002.jpg"
-    },
-    {
-        source: "images/003.jpg"
-    },
-    {
-        source: "images/004.jpg"
-    },
-    {
-        source: "images/002.jpg"
-    },
-    {
-        source: "images/003.jpg"
-    },
-]
-
-
-const imageContainer = document.querySelector(".left-bottom");
-
-const imageMethods = () => {
-    imageData.map((image) => {
-        // const imageElement = document.createElement('div');
-        // imageElement.classList.add('left');
-        image.innerHTML = `
-            <img src="${image.source}" alt="">
-        `
-        imageContainer.appendChild(imageElement);
-    })
-}
-
-// imageMethods();
-
-
 
 // Display Content
 
@@ -82,6 +39,24 @@ openPopupBtn.addEventListener("click", function() {
 closePopupBtn.addEventListener("click", function(){
     document.body.classList.remove("popup-active");
 })
+
+
+// sidebar toggle
+
+var sidebarOpen = false;
+var sidebar = document.querySelector('.sidebar');
+function openSidebar() {
+  if (!sidebarOpen) {
+    sidebar.classList.add('sidebar-responsive');
+    sidebarOpen = true;
+  }
+}
+function closeSidebar() {
+  if (sidebarOpen) {
+    sidebar.classList.remove('sidebar-responsive');
+    sidebarOpen = false;
+  }
+}
 
 
 // logout popup

@@ -43,6 +43,9 @@ html, body {
   margin: auto 20px auto 10px;
   color: #D2D9E5;
 }
+.header .dropdown:hover {
+  cursor: pointer;
+}
 
 .sidebar {
   background-color: #fff;
@@ -78,7 +81,7 @@ html, body {
   font-size: 12px;
   color: #ABB6BE;
 }
-.sidebar .sidebar-link p {
+.sidebar .sidebar-link p:hover {
   cursor: pointer;
 }
 
@@ -580,6 +583,28 @@ body .heading3 {
   display: inline !important;
   position: absolute;
   z-index: 12;
+  height: 100%;
+}
+
+.logoutpopup {
+  position: fixed;
+  top: -30%;
+  right: 2%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #ddd;
+}
+.logoutpopup i {
+  padding-right: 5px;
+}
+
+.logoutpopup:hover {
+  cursor: pointer;
+}
+
+body.logoutpopup-active .logoutpopup {
+  top: 6%;
 }
 
 @media (max-width: 1100px) {
