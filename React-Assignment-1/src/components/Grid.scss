@@ -1,0 +1,17 @@
+$borderColor: #8c3635;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  .operator {
+    background-color: #ed3a4f;
+    color: white;
+  }
+}

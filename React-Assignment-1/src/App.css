@@ -1,0 +1,53 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top {
+  height: 20%;
+  border: 1px solid #8c3635;
+  background-color: #433437;
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.bottom {
+  height: 80%;
+  border: 1px solid #8c3635;
+}
+.bottom .up {
+  height: 25%;
+  border-bottom: 1px solid #8c3635;
+  display: flex;
+}
+.bottom .up div:nth-child(1) {
+  width: 75%;
+  color: #818181;
+}
+.bottom .up div:nth-child(2) {
+  width: 25%;
+  background-color: #ed3a4f;
+  color: white;
+}
+.bottom .down {
+  height: 75%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.bottom .down .operator {
+  background-color: #ed3a4f;
+  color: white;
+}/*# sourceMappingURL=App.css.map */
