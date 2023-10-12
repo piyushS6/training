@@ -1,0 +1,92 @@
+.products{
+  width: 100%;
+  display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+
+  .left-products{
+    width: 40%;
+    margin-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .items{
+      background-color: aliceblue;
+      margin: 10px;
+      padding: 10px;
+      width: 100%;
+      border-radius: 10px ;
+    
+      img{
+        object-fit: contain;
+        height: 100px;
+        width: 200px;
+        cursor: pointer;
+      }
+    
+      button{
+        background-color: #198ffd;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 5px;
+        cursor: pointer;
+      }
+    }  
+  }
+  .right-products{
+    width: 60%; 
+    border-radius: 10px;
+    .empty-cart{
+      img{
+        height: 10%;
+        width: 50%;
+      }
+    }
+  
+  }
+  
+  .popup-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 15%;
+
+    .popup-body{
+      width: 70%;
+      height: 80%;
+      background-color: #fff;
+      margin: auto;
+
+      .popup-header{
+        width: 100%;
+        text-align: right;
+
+        button{
+          padding: 2px 5px;
+          margin: 5px;
+          border-radius: 50%;
+          border: none;
+          background-color: crimson;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+
+      .popup-card{
+        padding: 20px;
+        text-align: left;
+        img{
+          width: 50%;
+          height: 20%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+

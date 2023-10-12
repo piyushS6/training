@@ -1,0 +1,54 @@
+.itemList{
+  background-color: aliceblue;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+
+  ul{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    h3, p{
+      padding: 0 15px;
+    }
+    img{
+      object-fit: contain;
+      height: 100px;
+      width: 10vh;
+    }
+  }
+
+  
+
+  button{
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .qty-btn{
+    background-color:rgb(177, 177, 177);
+    color: black;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width:576px)
+{
+  .itemList ul
+  {
+    flex-direction: column;
+  }
+}
+
